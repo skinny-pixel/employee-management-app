@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body class="newcontact">
+    <div class="container">
+        <header>
+        <h1 class="LOGO">STAFFHUB</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="new-contact.html">New Contact</a>
+            <a href="view-contacts.html">View All Contacts</a>
+        </nav>
+        </header>
+        <br>
+        <h2>Add New Contact</h2>
+        <br>
+        <div class="contactform">
+        <form action="view-contacts.html" id="contactForm" >
+            <div>
+                <label for="ID">ID Number</label>
+                <input type="text" id="ID" placeholder="Enter Identification Number" required>
+            </div>
+            <br>
+            <div>
+                <label for="fname">FirstName</label>
+                <input type="text" id="fname" placeholder="Enter First Name" required>
+            </div>
+            <br>
+            <div>
+                <label for="lname">LastName</label>
+                <input type="text" id="lname" placeholder="Enter Last Name" required>
+            </div>
+            <br>
+            <div>
+                <label for="gender">Gender: </label>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female">
+            </div>
+            <br>
+            <div>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="+2547---- -----" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter Email" required>
+            </div>
+            <br>
+            <div>
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="Enter Address">
+            </div>
+            <br>
+            <div>
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" placeholder="MM/DD/YYYY">
+            </div>
+            <br>
+            <div>
+                <label for="position">Position</label>
+                <select id="position" >
+                    <option value="employee">Employee</option>
+                    <option value="manager">Manager</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
